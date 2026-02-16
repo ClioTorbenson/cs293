@@ -1,0 +1,66 @@
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(237, 231, 216);
+    color: rgb(50, 34, 30);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+img {
+    width: 200px;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-top: 120px;
+}
+
+h1 {
+    text-align: center;
+    font-family: serif, sans-serif;
+    font-style: italic;
+    font-size: 60px;
+    color: rgb(237, 231, 216);
+    background-color: rgb(35, 33, 31);
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+h2 {
+    font-family: serif, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.about-paragraph {
+    padding-right:300px;
+}
+
+.indent {
+    text-indent: 15px;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.copyright {
+    color: rgb(56, 56, 56);
+    font-style: italic;
+    font-size: small;
+}
+
+a {
+    color: rgb(68, 10, 38);
+    font-style: italic;
+}
+a:hover {
+    color: rgb(173, 165, 157);
+}
