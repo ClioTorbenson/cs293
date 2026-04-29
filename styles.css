@@ -1,5 +1,5 @@
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Archivo', sans-serif;
     background-color: rgb(223, 229, 231);
     color: rgb(50, 34, 30);
     margin-left: 150px;
@@ -8,7 +8,7 @@ body {
 
 h1 {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Clash Display', sans-serif;
     font-style: bold;
     font-size: 60px;
     color: rgb(50, 34, 30);
@@ -16,13 +16,12 @@ h1 {
 }
 
 h2 {
-    font-family: serif, sans-serif;
-    font-style: italic;
+    font-family: 'Clash Display', 'Archivo', sans-serif;
     font-size: 30px;
 }
 
 h3 {
-    font-style: italic;
+    font-family: 'Clash Display', 'Archivo', sans-serif;
     font-size: 20px;
 }
 .header {
@@ -30,7 +29,7 @@ h3 {
 }
 
 .about-paragraph {
-    padding-right:300px;
+    padding-right:350px;
 }
 
 .indent {
@@ -52,7 +51,6 @@ h3 {
 
 a {
     color: rgb(68, 10, 38);
-    font-style: italic;
 }
 a:hover {
     color: rgb(173, 165, 157);
@@ -72,8 +70,6 @@ a:hover {
 }
 
 img {
-    width: 200px;
-    border-radius: 20px;
-    margin-right: 40px;
-    margin-top: 120px;
+    width: 300px;
+    border-radius: 15px;
 }
