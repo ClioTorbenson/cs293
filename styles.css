@@ -1,6 +1,6 @@
 body {
     font-family: 'Archivo', sans-serif;
-    background-color: rgb(223, 229, 231);
+    background-color: rgb(248, 251, 251);
     color: rgb(50, 34, 30);
     margin-left: 150px;
     margin-right: 150px;
@@ -10,9 +10,8 @@ h1 {
     text-align: center;
     font-family: 'Clash Display', sans-serif;
     font-style: bold;
-    font-size: 60px;
+    font-size: 95px;
     color: rgb(50, 34, 30);
-    padding: 10px;
 }
 
 h2 {
