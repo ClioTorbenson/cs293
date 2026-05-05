@@ -1,23 +1,31 @@
 let contactForm = document.getElementById("contactForm");
+let modalEl = document.getElementById("formSubmission");
 contactForm.addEventListener("submit", checkForm);
 
 function checkForm(event) {
-   contactForm.firstName.style.backgroundColor = "LightGreen";
-   contactForm.lastName.style.backgroundColor = "LightGreen";
-   contactForm.email.style.backgroundColor = "LightGreen";
+   event.preventDefault();
 
+   contactForm.firstName.style.boxShadow = "0px 0px 6px lightGreen";
+   contactForm.lastName.style.boxShadow = "0px 0px 6px lightGreen";
+   contactForm.email.style.boxShadow = "0px 0px 6px lightGreen";
+
+   let validForm = true;
    if (contactForm.firstName.value === "") {
-      contactForm.firstName.style.backgroundColor = "Orange";
-      event.preventDefault();
+      contactForm.firstName.style.boxShadow = "0px 0px 6px red";
+      validForm = false;
    }
 
-   if (contactForm.lastName.value.length != 5) {
-      contactForm.lastName.style.backgroundColor = "Orange";
-      event.preventDefault();
+   if (contactForm.lastName.value === "") {
+      contactForm.lastName.style.boxShadow = "0px 0px 6px red";
+      validForm = false;
    }
-
-   if (contactForm.email.value != "yes") {
-      contactForm.email.style.backgroundColor = "Orange";
-      event.preventDefault();
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+   if (!emailRegex.test(contactForm.email.value)) {
+      contactForm.email.style.boxShadow = "0px 0px 6px red";
+      validForm = false;
    }
+   if (validForm) {
+    let modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+    modal.show();
+  }
 }
