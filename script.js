@@ -25,7 +25,11 @@ function checkForm(event) {
       validForm = false;
    }
    if (validForm) {
-    let modal = bootstrap.Modal.getOrCreateInstance(modalEl);
-    modal.show();
+      contactForm.firstName.value = "";
+      contactForm.lastName.value = "";
+      contactForm.email.value = "";
+      contactForm.message.value = "";
+      let modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+      modal.show();
   }
 }
