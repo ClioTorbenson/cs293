@@ -68,7 +68,15 @@ a:hover {
     font-size: 25px;
 }
 
-img {
+#photo {
     width: 300px;
     border-radius: 15px;
+}
+
+#er {
+    width: 600px;
+}
+
+#final {
+    width: 500px;
 }
